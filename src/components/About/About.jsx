@@ -32,22 +32,36 @@ function About() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
           <div className="bg-white p-6 rounded-lg shadow-sm border border-dark/5">
-            <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
-              <span className="text-primary text-2xl">🎯</span>
+            <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4 overflow-hidden">
+              <img 
+                src="/images/craft.jpg" 
+                alt="Craft" 
+                className="w-full h-full object-cover"
+              />
             </div>
             <h3 className="font-heading text-xl font-semibold text-dark">Craft</h3>
             <p className="font-body text-dark/60 text-sm mt-2">Immaculately maintained tables, precision equipment, and a respect for the game's traditions.</p>
           </div>
+          
           <div className="bg-white p-6 rounded-lg shadow-sm border border-dark/5">
-            <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
-              <span className="text-primary text-2xl">🤝</span>
+            <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4 overflow-hidden">
+              <img 
+                src="/images/community.jpg" 
+                alt="Community" 
+                className="w-full h-full object-cover"
+              />
             </div>
             <h3 className="font-heading text-xl font-semibold text-dark">Community</h3>
             <p className="font-body text-dark/60 text-sm mt-2">A diverse membership from all walks of life, brought together by a shared love of the game.</p>
           </div>
+          
           <div className="bg-white p-6 rounded-lg shadow-sm border border-dark/5">
-            <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
-              <span className="text-primary text-2xl">🏆</span>
+            <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4 overflow-hidden">
+              <img 
+                src="/images/competition.jpg" 
+                alt="Competition" 
+                className="w-full h-full object-cover"
+              />
             </div>
             <h3 className="font-heading text-xl font-semibold text-dark">Competition</h3>
             <p className="font-body text-dark/60 text-sm mt-2">Leagues, tournaments, and friendly rivalries – there's always a match to be played.</p>
