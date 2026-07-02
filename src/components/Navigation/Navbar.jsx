@@ -12,8 +12,10 @@ function Navbar() {
   }, [])
 
   return (
-    <header className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
-      scrolled ? 'bg-dark/90 backdrop-blur-sm shadow-lg' : 'bg-transparent'
+    <header className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${
+      scrolled
+        ? 'bg-primary shadow-lg backdrop-blur-sm'
+        : 'bg-transparent'
     }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
         <a href="/" className="font-heading text-2xl text-cream tracking-wider">
