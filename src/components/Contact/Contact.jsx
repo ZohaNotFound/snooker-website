@@ -10,9 +10,10 @@ function Contact() {
         </div>
 
         <div className="grid md:grid-cols-2 gap-8">
+          {/* Google Map Embed – Lahore, Pakistan */}
           <div className="h-72 rounded-lg overflow-hidden shadow-lg">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2351.382487733007!2d-1.5476847!3d53.7939994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48795a8d2d28a4b1%3A0x6f5b3b3b3b3b3b3b!2sLeeds!5e0!3m2!1sen!2suk!4v1620000000000"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3403.123456789!2d74.3587!3d31.5204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39190483e493c8d5%3A0x8b4d9e3b6d5f4e7a!2sLahore%2C+Punjab%2C+Pakistan!5e0!3m2!1sen!2s!4v1620000000000"
               width="100%"
               height="100%"
               style={{ border: 0 }}
@@ -23,15 +24,16 @@ function Contact() {
             ></iframe>
           </div>
 
+          {/* Contact Details */}
           <div className="space-y-4">
             <div>
               <h3 className="font-heading text-xl font-semibold text-dark">Address</h3>
-              <p className="font-body text-dark/70">12 Victoria Street, Leeds, LS1 6AA</p>
+              <p className="font-body text-dark/70">Snooker Club, Main Boulevard, Lahore, Pakistan</p>
             </div>
             <div>
               <h3 className="font-heading text-xl font-semibold text-dark">Contact</h3>
-              <p className="font-body text-dark/70">Phone: 0113 245 6789</p>
-              <p className="font-body text-dark/70">Email: info@carltondistrict.co.uk</p>
+              <p className="font-body text-dark/70">Phone: +92 42 1234 5678</p>
+              <p className="font-body text-dark/70">Email: info@carltondistrict.pk</p>
             </div>
             <div>
               <h3 className="font-heading text-xl font-semibold text-dark">Opening Hours</h3>
