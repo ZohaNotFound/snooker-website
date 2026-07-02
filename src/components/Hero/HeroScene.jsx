@@ -1,31 +1,22 @@
-import { Physics } from "@react-three/rapier";
-import CameraRig from "./CameraRig";
-import Lights from "./Lights";
-import PoolTable from "./PoolTable";
-import Rack from "./Rack";
-import CueBall from "./CueBall";
-import Effects from "./Effects";
+import { useFrame } from '@react-three/fiber'
+import { PerspectiveCamera } from '@react-three/drei'
+import { useRef } from 'react'
+import CameraRig from './CameraRig'
+import Lights from './Lights'
+import PoolTable from './PoolTable'
+import Effects from './Effects'
 
-export default function HeroScene() {
+function easeInOutQuad(t) {
+  return t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t
+}
+
+export default function HeroScene({ isVisible }) {
   return (
     <>
       <CameraRig />
-
       <Lights />
-
-      <Physics
-        gravity={[0, -9.81, 0]}
-        interpolate
-        colliders={false}
-      >
-        <PoolTable />
-
-        <Rack />
-
-        <CueBall />
-      </Physics>
-
+      <PoolTable />
       <Effects />
     </>
-  );
+  )
 }

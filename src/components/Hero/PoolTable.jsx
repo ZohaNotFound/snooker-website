@@ -3,18 +3,23 @@ import { RigidBody, CuboidCollider } from "@react-three/rapier";
 export default function PoolTable() {
   return (
     <group>
-      {/* TABLE BODY */}
-      <mesh position={[0, -0.12, 0]} receiveShadow>
+      {/* TABLE BODY - Dark wood frame */}
+      <mesh position={[0, -0.12, 0]} receiveShadow castShadow>
         <boxGeometry args={[3.4, 0.25, 1.9]} />
-        <meshStandardMaterial color="#3b2416" />
+        <meshStandardMaterial 
+          color="#2a1f14" 
+          roughness={0.4}
+          metalness={0.05}
+        />
       </mesh>
 
-      {/* FELT */}
-      <mesh position={[0, 0.02, 0]} receiveShadow>
+      {/* FELT - Professional snooker baize green */}
+      <mesh position={[0, 0.02, 0]} receiveShadow castShadow>
         <boxGeometry args={[2.84, 0.05, 1.42]} />
         <meshStandardMaterial
-          color="#14532d"
-          roughness={1}
+          color="#1e5631"
+          roughness={0.95}
+          metalness={0}
         />
       </mesh>
 
